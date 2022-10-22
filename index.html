@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
+        defer></script>
+    <!-- Links dos botões de acessibilidade  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Links CSS  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link cdn font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BootsHack - 4devs</title>
+</head>
+
+<body class="body">
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Navegação">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img height="40px" src="./image/logobh.png" alt="Logo BootsHack">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
+                aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Exibir navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarPrincipal">
+                <ul class="navbar-nav ms-4 me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active dyn-font" aria-current="page" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dyn-font" href="./introducao.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Guideline</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dyn-font" href="/introducao.html">Introdução</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item dyn-font" href="./daltonismo.html">Daltonismo</a></li>
+                            <li><a class="dropdown-item dyn-font" href="./autismo.html">Autismo</a></li>
+                            <li><a class="dropdown-item dyn-font" href="./defvisuais.html">Deficiêntes Visuais</a></li>
+                            <li><a class="dropdown-item dyn-font" href="./defauditivos.html">Deficiêntes Auditivos</a></li>
+                            <li><a class="dropdown-item dyn-font" href="./defmotora.html">Deficiência Motora</a></li>
+                            <li><a class="dropdown-item dyn-font" href="./dislexia.html">Dislexia</a></li>
+                        </ul>
+                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link dyn-font" href="./depoimentos.html">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dyn-font" href="./sobrenos.html">Sobre nós</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="nav-icons material-symbols-outlined dyn-font" accesskey="3"
+                            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">
+                                contrast
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="nav-icons material-symbols-outlined dyn-font" onclick="increaseFont()">
+                                text_increase
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="nav-icons material-symbols-outlined dyn-font" onclick="decreaseFont()">
+                                text_decrease
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- fim nav bar -->
+
+    <!-- sobre  -->
+    <div>
+        <div class="container sobre py-5">
+            <div class="row row-cols-md-2">
+                <div class="col order-md-1 text-center text-md-start ps-5">
+                    <img class="slogan mb-3" src="./image/slogan.svg" alt="Slogan">
+                    <h1 class="texto-introducao ms-4 dyn-font">O site que te ajuda a<br>construir webpages rápidas<br>e
+                        acessíveis a todos!
+                    </h1>
+                </div>
+                <div class="col-6 order-md-2 text-center">
+                    <img class="img-fluid" src="./image/logosobre.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="row px-3 py-3 mx-0">
+            <div class="col-5 text-end">
+                <img class="img-fluid img-2" src="./image/imagemsobre1.png" alt="Imagem Ilustrativa">
+            </div>
+
+            <div class="col-5 ps-5 d-flex align-items-center">
+                <h3 class="dyn-font">
+                    Acessibilidade vai além de incluir as pessoas que precisam dela, mas sim ajustar
+                    nosso dia-a-dia fazendo com que recursos acessíveis sejam rotina!
+                </h3>
+
+            </div>
+        </div>
+
+        <hr class="mx-auto w-75">
+    </div>
+    <!-- fim sobre  -->
+
+    <!-- daltonismo  -->
+    <div class="container daltonismo py-5">
+        <h2 class="text-center dyn-font">Daltonismo</h2>
+        <p class="dyn-font">Os daltônicos nascem com uma condição rara, chamada pelos médicos como discromatopsia ou
+            daltonismo. Existem
+            tipos diferentes de daltonismo, entre eles:
+        <ul class="my-3">
+            <li class="dyn-font"><span class="fw-bold">Protanopia:</span> Redução ou completa ausência do pigmento vermelho;</li>
+            <li class="dyn-font"><span class="fw-bold">Deuteranopia:</span> Não conseguem ver a cor verde;</li>
+            <li class="dyn-font"><span class="fw-bold">Tritanopia:</span> É um tipo mais raro de daltonismo e
+                que interfere na forma como as cores azul e amarelo são vistas. E, embora a pessoa não perca,
+                totalmente, a
+                capacidade de enxergar o azul, a cor toma tonalidades diferentes. O amarelo, por outro lado, fica rosa e
+                o
+                laranja não existe.</li>
+        </ul>
+        </p>
+        <p class="text-center fw-bold dyn-font">Sendo assim, tons acessíveis ficam entre tons claros de rosa, amarelos
+            amarronzados, tonalidades de azul e marrom.</p>
+        <div class="row">
+            <div class="col text-center">
+                <div class="w-100">
+                    <svg width="80" height="95" viewBox="0 0 80 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.9384 66.6533C18.3335 65.5693 15.2158 63.3911 12.063 61.2013C8.54484 58.7579 4.89993 55.7977 2.76252 51.7023C1.67772 49.624 1.03717 47.105 0.620443 44.816C-0.389972 39.266 -0.183059 33.6229 1.36469 28.2579C2.67541 23.7144 4.01576 19.7624 6.96086 16.2148C9.04884 13.6996 11.4478 11.5107 13.9417 9.53502C17.5804 6.65252 21.2249 4.03004 25.4783 2.51753C30.9608 0.56814 36.8431 0.346075 42.5397 0.10567C49.142 -0.172684 56.5669 -0.104957 62.7339 2.91899C66.2949 4.66501 68.7793 7.05217 71.6775 10.008C73.0791 11.4374 74.1705 12.5877 75.1213 14.4542C78.6279 21.3386 80.6243 29.4254 79.8245 37.3867C79.3335 42.2755 77.8429 46.9354 75.7385 51.2255C72.216 58.4065 63.7953 61.4448 61.8513 69.7853C61.1333 72.8655 62.0141 75.9597 61.8513 79.1525C61.5194 85.6561 61.0613 86.3842 60.2982 93.022C60.1153 94.6136 57.3062 95.6992 56.723 93.022C55.4011 86.9523 55.7463 86.0934 53.8044 81.1008C52.9083 78.7974 51.3681 76.5941 50.1622 74.5008C47.4308 69.7595 41.4892 70.3282 37.1379 70.0141C31.8842 69.6348 26.8462 68.9971 21.9384 66.6533Z"
+                            fill="#9898A2" />
+                    </svg>
+                </div>
+                <span class="dyn-font">RGB(152, 152, 162)<br>Hex Code: #9898A2</span>
+                
+            </div>
+            <div class="col text-center">
+                <div class="w-100">
+                    <svg width="80" height="95" viewBox="0 0 80 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.9384 66.6533C18.3335 65.5693 15.2158 63.3911 12.063 61.2013C8.54484 58.7579 4.89993 55.7977 2.76252 51.7023C1.67772 49.624 1.03717 47.105 0.620443 44.816C-0.389972 39.266 -0.183059 33.6229 1.36469 28.2579C2.67541 23.7144 4.01576 19.7624 6.96086 16.2148C9.04884 13.6996 11.4478 11.5107 13.9417 9.53502C17.5804 6.65252 21.2249 4.03004 25.4783 2.51753C30.9608 0.56814 36.8431 0.346075 42.5397 0.10567C49.142 -0.172684 56.5669 -0.104957 62.7339 2.91899C66.2949 4.66501 68.7793 7.05217 71.6775 10.008C73.0791 11.4374 74.1705 12.5877 75.1213 14.4542C78.6279 21.3386 80.6243 29.4254 79.8245 37.3867C79.3335 42.2755 77.8429 46.9354 75.7385 51.2255C72.216 58.4065 63.7953 61.4448 61.8513 69.7853C61.1333 72.8655 62.0141 75.9597 61.8513 79.1525C61.5194 85.6561 61.0613 86.3842 60.2982 93.022C60.1153 94.6136 57.3062 95.6992 56.723 93.022C55.4011 86.9523 55.7463 86.0934 53.8044 81.1008C52.9083 78.7974 51.3681 76.5941 50.1622 74.5008C47.4308 69.7595 41.4892 70.3282 37.1379 70.0141C31.8842 69.6348 26.8462 68.9971 21.9384 66.6533Z"
+                            fill="#DEB841" />
+                    </svg>
+                </div>
+                    <span class="dyn-font">RGB(222, 184, 65)<br>Hex Code: #DEB841</span>          
+                </div>
+            <div class="col text-center">
+                <div class="w-100">
+                    <svg width="80" height="95" viewBox="0 0 80 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.9384 66.6533C18.3335 65.5693 15.2158 63.3911 12.063 61.2013C8.54484 58.7579 4.89993 55.7977 2.76252 51.7023C1.67772 49.624 1.03717 47.105 0.620443 44.816C-0.389972 39.266 -0.183059 33.6229 1.36469 28.2579C2.67541 23.7144 4.01576 19.7624 6.96086 16.2148C9.04884 13.6996 11.4478 11.5107 13.9417 9.53502C17.5804 6.65252 21.2249 4.03004 25.4783 2.51753C30.9608 0.56814 36.8431 0.346075 42.5397 0.10567C49.142 -0.172684 56.5669 -0.104957 62.7339 2.91899C66.2949 4.66501 68.7793 7.05217 71.6775 10.008C73.0791 11.4374 74.1705 12.5877 75.1213 14.4542C78.6279 21.3386 80.6243 29.4254 79.8245 37.3867C79.3335 42.2755 77.8429 46.9354 75.7385 51.2255C72.216 58.4065 63.7953 61.4448 61.8513 69.7853C61.1333 72.8655 62.0141 75.9597 61.8513 79.1525C61.5194 85.6561 61.0613 86.3842 60.2982 93.022C60.1153 94.6136 57.3062 95.6992 56.723 93.022C55.4011 86.9523 55.7463 86.0934 53.8044 81.1008C52.9083 78.7974 51.3681 76.5941 50.1622 74.5008C47.4308 69.7595 41.4892 70.3282 37.1379 70.0141C31.8842 69.6348 26.8462 68.9971 21.9384 66.6533Z"
+                            fill="#695252" />
+                    </svg>
+                </div>
+                    <span class="dyn-font">RGB(105, 82, 82)<br>Hex Code: #695252</span>      
+                </div>
+            <div class="col text-center">
+                <div class="w-100">
+                    <svg width="80" height="95" viewBox="0 0 80 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.9384 66.6533C18.3335 65.5693 15.2158 63.3911 12.063 61.2013C8.54484 58.7579 4.89993 55.7977 2.76252 51.7023C1.67772 49.624 1.03717 47.105 0.620443 44.816C-0.389972 39.266 -0.183059 33.6229 1.36469 28.2579C2.67541 23.7144 4.01576 19.7624 6.96086 16.2148C9.04884 13.6996 11.4478 11.5107 13.9417 9.53502C17.5804 6.65252 21.2249 4.03004 25.4783 2.51753C30.9608 0.56814 36.8431 0.346075 42.5397 0.10567C49.142 -0.172684 56.5669 -0.104957 62.7339 2.91899C66.2949 4.66501 68.7793 7.05217 71.6775 10.008C73.0791 11.4374 74.1705 12.5877 75.1213 14.4542C78.6279 21.3386 80.6243 29.4254 79.8245 37.3867C79.3335 42.2755 77.8429 46.9354 75.7385 51.2255C72.216 58.4065 63.7953 61.4448 61.8513 69.7853C61.1333 72.8655 62.0141 75.9597 61.8513 79.1525C61.5194 85.6561 61.0613 86.3842 60.2982 93.022C60.1153 94.6136 57.3062 95.6992 56.723 93.022C55.4011 86.9523 55.7463 86.0934 53.8044 81.1008C52.9083 78.7974 51.3681 76.5941 50.1622 74.5008C47.4308 69.7595 41.4892 70.3282 37.1379 70.0141C31.8842 69.6348 26.8462 68.9971 21.9384 66.6533Z"
+                            fill="#152D73" />
+                    </svg>
+                </div>
+                    <span class="dyn-font">RGB(21, 45, 115)<br>Hex Code: #152D73</span>         
+                </div>
+        </div>
+
+        <hr class="mx-auto w-75">
+    </div>
+    <!-- fim daltonismo  -->
+
+    <!-- autismo  -->
+    <div class="container autismo py-5">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="dyn-font">Autismo</h2>
+                <p class="dyn-font">
+                    Uma página acessível para uma pessoa com autismo contém:
+                <ul class="dyn-font">
+                    <li>Interfaces simples;</li>
+                    <li>Nenhuma distração como efeitos e propagandas;</li>
+                    <li>Cores que não sejam saturadas;</li>
+                    <li>Conteúdo sucinto.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="col-6 img-fluid">
+                <img src="./image/imagemautismo.png" alt="Autismo">
+            </div>
+        </div>
+        <hr class="mx-auto w-75">
+    </div>
+    <!-- fim autismo  -->
+
+    <!-- deficientes visuais -->
+    <div class="container def-visual py-5">
+        <div class="row">
+            <div class="col-6">
+                <img src="./image/imagemdeficienciavisual.png" alt="Deficiência Visual">
+            </div>
+            <div class="col-5">
+                <h2 class=" mt-4 dyn-font">Deficientes Visuais</h2>
+                <p class="dyn-font">As seguintes opções são soluções acessíveis para os usuários deficientes visuais:
+                <ul class="dyn-font">
+                    <li>Audio Descrição</li>
+                    <li>Reconhecimento por voz</li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <h2 class="text-center dyn-font">Código de reconhecimento e comandos de voz</h2>
+                <div class="text-center">
+                    <img class="h-50 img-fluid mt-5 img-thumbnail " src="./image/codvoz.png" alt="Código para desenvolvedores">
+                </div>
+            </div>
+        </div>
+        <hr class="mx-auto w-75">
+    </div>
+    <!-- fim deficientes visuais  -->
+
+    <!-- deficientes auditivos  -->
+    <div class="container mb-5">
+        <h2 class="text-center dyn-font">Deficientes Auditivos</h2>
+        <p class="dyn-font">Sigla de Língua Brasileira de Sinais, é um conjunto de gestos utilizado por pessoas com deficiência
+            auditiva e surdos para a comunicação entre eles e outras pessoas, também ouvintes.
+        </p>
+        <div>
+            <h2 class="text-center mt-4 dyn-font">Código de Plugin Libras</h2>
+            <div class="text-center">
+                <img class="w-50 mt-3 img-thumbnail" src="./image/codlibras.png" alt="Código para desenvolvedores">
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- fim deficientes auditivos  -->
+
+    <!-- dislexia  -->
+    <div class="container dislexia">
+
+    </div>
+
+    <!-- fim dislexia  -->
+
+    <!-- depoimentos  -->
+    <div class="container bg-secondary my-5 rounded p-3 text-black">
+        <h2 class="dyn-font">Depoimentos</h2>
+        <div class="row">
+            <div class="col border-end">
+                <p class="dyn-font">
+                    “Falou em acessibilidade, falou em BootsHack, o site mais completo para os desenvolvedores. Sempre
+                    atualizado e me ajudando a construir uma internet mais inclusiva! Recomendo!”
+
+                </p>
+                <div>
+                    <span class="dyn-font">                    
+                    Jonas Souza <br>
+                    UI Designer
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <p class="dyn-font">
+                    “O BootsHack sempre me ajuda demais! Frequentemente acesso o portal para consultar as melhores
+                    práticas e aplicá-las no meu dia a dia. Como Front-end Developer, recomendo a plataforma!”
+
+                </p>
+                <div>
+                    <span class="dyn-font">
+                        Sula Miranda Silva <br>
+                        UI Designer
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- fim depoimentos  -->
+
+    <hr class="w-25 mx-auto">
+
+    <!-- footer  -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-2 my-5">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none fw-bold dyn-font">
+                    BOOTSHACK
+                </a>
+                <small class="text-muted dyn-font">O site que te ajuda a construir webpages rápidas e acessíveis a todos!</small>
+                <div class="d-flex w-100 justify-content-around py-5">
+                    <i class="fa-brands fa-lg fa-facebook text-secondary"></i>
+                    <i class="fa-brands fa-lg fa-twitter text-secondary"></i>
+                    <i class="fa-brands fa-lg fa-instagram text-secondary"></i>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="dyn-font">Companhia</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted dyn-font">Sobre nós</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted dyn-font">Fale conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="dyn-font">Ajuda</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted dyn-font">SAC</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="dyn-font">Mais</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted dyn-font">Exemplos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted dyn-font">Parcerias</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="dyn-font">Termos</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted ">Termos de Uso</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- fim footer  -->
+
+    <!-- Leitor Libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Fim Leitor Libras -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./javascript.js"></script>
+</body>
+
+</html>

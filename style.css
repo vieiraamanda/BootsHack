@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Secular+One&family=Ubuntu:wght@500&display=swap');
+;
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+
+
+/* CORES EM ALTO CONTRASTE */
+.contrast,
+.contrast nav,
+.contrast div,
+.contrast li,
+.contrast ol,
+.contrast header,
+.contrast footer,
+.contrast section,
+.contrast main,
+.contrast aside,
+.contrast article {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+
+.contrast section {
+  border: 1px solid #fff;
+}
+
+.contrast {
+  padding: 1rem;
+}
+
+.contrast h1,
+.contrast h2,
+.contrast h3,
+.contrast h4,
+.contrast h5,
+.contrast h6,
+.contrast p,
+.contrast label,
+.contrast strong,
+.contrast em,
+.contrast cite,
+.contrast q,
+.contrast a,
+.contrast i,
+.contrast b,
+.contrast u,
+.contrast span {
+  color: #fff !important;
+}
+
+vw-text-active {
+  color: #f2f2f2 !important;
+}
+
+.vw-text:hover {
+  color: #9b9b9b !important;
+}
+
+.body {
+    background-color: rgba(246, 246, 246, 1);
+}
+
+.sidebar-nav .nav-item {
+    line-height: 14px;
+}
+
+.sidebar-nav .nav-item a, 
+.sidebar-nav .nav-item a:visited {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    line-height: 14px;
+}
+
+.sidebar-nav .nav-item .active {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+}
+
+/*--------------   nav bar   --------------   */
+.nav-icons {
+    font-size: 18px;
+    line-height: inherit;
+}
+
+/* --------------   sobre  --------------  */
+.slogan {
+    max-width: 350px;
+}
+
+.texto-introducao {
+    font-size: 25px
+}
+
+.img-2 {
+    max-width: 300px;
+}
+
+/*--------------  daltonismo  -------------- */
+.daltonismo {
+    font-size: 18px;
+}
+
+/*--------------  autismo  -------------- */
+.autismo {
+    font-size: 18px;
+}
